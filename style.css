@@ -30,7 +30,7 @@ nav a:hover {
 /*fixerad storlek på navigationen då den annars blir för stor ibland*/
 .wrapper {
     display: grid;
-    grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     gap: 1em;
     margin: 0;
@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 .welcometext {
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 5;
     grid-row: 2;
     width: 100%;
     border-top: 2px solid black;
@@ -79,7 +79,7 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 4em;
-    grid-column: 3 / 5;
+    grid-column: 3 / 6;
     grid-row: 4;
     width: 100%;
 }
@@ -87,7 +87,6 @@ img {
 .laura {
     grid-column: 1;
     grid-row: 1;
-    margin: 4px;
     text-align: center;
     border: 2px solid black;
     padding: 2%;
@@ -97,7 +96,6 @@ img {
 .lina {
     grid-column: 2;
     grid-row: 1;
-    margin: 4px;
     text-align: center;
     border: 2px solid black;
     padding: 2%;
@@ -107,7 +105,6 @@ img {
 .daniela {
     grid-column: 3;
     grid-row: 1;
-    margin: 4px;
     text-align: center;
     border: 2px solid black;
     padding: 2%;
@@ -115,7 +112,7 @@ img {
 }
 
 .sidfot {
-    grid-column: 1 / span 5;
+    grid-column: 4;
     grid-row: 5;
     text-align: center;
 }
